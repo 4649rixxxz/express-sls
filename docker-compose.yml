@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  app:
+    build: .
+    volumes:
+      - ./express-sample:/usr/src/express-sample
+    ports:
+      - "8080:8080"
+    tty: true
